@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
+import AppHelloWorld from '@/components/AppHelloWorld';
+import AppRegister from '@/components/AppRegister';
 
 Vue.use(Router);
 
@@ -10,7 +11,12 @@ export default new Router({
     {
       path: '/',
       name: 'Hello',
-      component: HelloWorld,
+      component: AppHelloWorld,
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: AppRegister,
     },
   ],
 });
